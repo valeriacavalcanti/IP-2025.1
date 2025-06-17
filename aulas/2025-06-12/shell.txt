@@ -1,0 +1,86 @@
+Python 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> misterio = []
+>>> type(misterio)
+<class 'list'>
+>>> len(misterio)
+0
+>>> misterio.append(12)
+>>> misterio
+[12]
+>>> misterio.append(32.16)
+>>> misterio
+[12, 32.16]
+>>> misterio.append('IFPB')
+>>> misterio
+[12, 32.16, 'IFPB']
+>>> misterio.append(True)
+misterio
+[12, 32.16, 'IFPB', True]
+misterio.append([10,20,30,40])
+misterio
+[12, 32.16, 'IFPB', True, [10, 20, 30, 40]]
+
+
+
+misterio[0]
+12
+
+misterio[1]
+32.16
+
+misterio[2]
+'IFPB'
+
+
+misterio[3]
+True
+
+
+misterio[4]
+[10, 20, 30, 40]
+
+misterio[4][0]
+10
+
+misterio[4][3]
+40
+
+misterio[4][3] = [50,60]
+
+misterio
+[12, 32.16, 'IFPB', True, [10, 20, 30, [50, 60]]]
+
+
+misterio.append(misterio)
+
+misterio
+[12, 32.16, 'IFPB', True, [10, 20, 30, [50, 60]], [...]]
+
+
+misterio[4] = [10,20,30,40]
+
+
+miserio
+Traceback (most recent call last):
+  File "<pyshell#45>", line 1, in <module>
+    miserio
+NameError: name 'miserio' is not defined. Did you mean: 'misterio'?
+
+
+misterio
+[12, 32.16, 'IFPB', True, [10, 20, 30, 40], [...]]
+
+
+del(misterio[5])
+
+
+
+misterio
+[12, 32.16, 'IFPB', True, [10, 20, 30, 40]]
+
+
+
+
+
+
